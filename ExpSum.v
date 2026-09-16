@@ -1,0 +1,20 @@
+////////////////////////////////////////////////////////////////////
+//
+//  ExpSum.v
+//
+//  Este modulo sirve como sumador de exponentes para la multiplicación.
+//                
+//  Pablo Navarro y Vladimir Gonzales
+//
+////////////////////////////////////////////////////////////////////
+
+module ExpSum (EXP_A, EXP_B, EXP_SUM);
+    
+    input [7:0] EXP_A, EXP_B;
+    output wire [8:0] EXP_SUM;
+
+    assign EXP_SUM = EXP_A + EXP_B - 127;
+
+endmodule
+
+////////////////////////////////////////////////////////////////////
